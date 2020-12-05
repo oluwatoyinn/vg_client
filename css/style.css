@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root 
+{
+  --mainRed:#ff0000;
+  --mainYellow:rgb(240,228,148);
+  --mainWhite:#fff;
+  --mainBlack:#000;
+  --redTrans:rgba(249,228,148,0.5);
+  --redTransition:rgb(255, 128, 128);
+  --mainGrey:rgb(238,238,238);
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body
+{
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color:var(--mainBlack) 
+}
+
+/* head section */
+.nav-info p
+{
+    font-size: 0.75rem;
+    /* color: ; */
+}
+.head{color: var(--mainRed);}
+.bg_logo{
+    width: 10%;
+}
+.nav-link
+{
+  color:var(--mainRed) !important;
+  font-size: 1.1rem;
+  padding-right: 30px !important;
+  transition: all 1s ease-in-out;
+}
+.nav-link:hover{
+    color: var(--mainBlack) !important;
+    border-bottom: solid 2px var(--mainBlack);
+}
+
+/* slider */
+.max-height
+{
+    background: var(--mainYellow);
+    min-height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.slider-text{
+    color: var(--mainWhite);
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: italic;
+}
+.slider-text h1 {
+    font-size: 3.4rem;
+}
+.slider-text h4{font-size: 1.1rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* laptop, phone and tablet */
+@media screen and (max-width: 768px)  {
+    .slider-text h4 {
+        font-size: 0.7rem;
+    }
+    .slider-text h1 {
+        font-size: 1.4rem;
+    }
+    .slider-text h3 {
+        font-size: 1.4rem;
+    }
+}
