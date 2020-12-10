@@ -52,9 +52,6 @@
             <li class="nav-item active mr-3" >
               <a class="nav-link" href="about.html">About us <span class="sr-only">(current)</span></a>
             </li>
-            <!-- <li class="nav-item mr-3" >
-              <a class="nav-link" href="#Services">services</a>
-            </li> -->
             <li>
                 <div class="dropdown">
                  <!-- <button class="dropbtn">Services</button> -->
@@ -77,31 +74,96 @@
       </nav>  
     </div>
 </section>
-
-<section id="slider">
+<!-- business development -->
+<section id="business">
     <div class="container-fluid">
-        <div class="row slider-height justify-content-center align-items-center">
+        <div class="row business-height justify-content-center align-items-center">
             <div class="container">
                 <div class="col-10 mr-auto slider-text">
-                    <h2 class="mb-3 mt-5">Contact Us</h2>
-                    <h4 class="m-0">Contact us here. We'd love to hear from you</h4>
-                    <a href="#contactus">
-                        <button type="button" class=" border-none business_tab text-uppercase mt-3 mr-3 pt-3 pb-3 pr-4 pl-4 font-weight-bold ">Business enquiries</button>
-                    </a>
-                </div>
-                <div class="row">
-                    <div class="Contactemail col-11 mx-auto col-md-6 col-lg-3 my-4 p-3">
-                        <h4>Send us a mail</h4>
-                        <p>veginus2016@gmail.com</p>
-                    </div>
-                    <div class="contactNumber col-11 mx-auto col-md-6 col-lg-3 my-4">
-                        <h4>Give us a call</h4>
-                        <p>(234) 803 345 9094</p>
-                    </div>
-                    <div class=" col-11 mx-auto col-md-6 col-lg-4 ">
-                    </div>
+                    <h2 class="text-capitalize mb-3 " >Schedule an appointment</h2>      
+                    <p> We are always available for you.  </p>
                 </div> 
             </div>
+        </div>
+    </div>
+</section>
+<section class="schedule-appointment mt-3">
+    <div class="container ">
+        <div class="row pt-5">
+            <div class="col-md-6 services-mobile ">
+                <h3 class="text-muted mb-4">Our Services</h3>
+                <!-- <hr> -->
+                <div class="business-div">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        nobis tempora at. Voluptatem expedita eos provident doloremque 
+                        architecto rem ducimus dicta iste dolorum magni officia, 
+                        consequatur eveniet ea? Eaque, possimus! 
+                      </p>   
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        nobis tempora at. Voluptatem expedita eos provident doloremque 
+                        architecto rem ducimus dicta iste dolorum magni officia, 
+                        consequatur eveniet ea? Eaque, possimus!  
+                      </p>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        nobis tempora at. Voluptatem expedita eos provident doloremque 
+                        architecto rem ducimus dicta iste dolorum magni officia, 
+                        consequatur eveniet ea? Eaque, possimus! 
+                      </p>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        nobis tempora at. Voluptatem expedita eos provident doloremque 
+                        architecto rem ducimus dicta iste dolorum magni officia, 
+                        consequatur eveniet ea? Eaque, possimus! 
+                      </p>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        nobis tempora at. Voluptatem expedita eos provident doloremque 
+                        architecto rem ducimus dicta iste dolorum magni officia, 
+                        consequatur eveniet ea? Eaque, possimus! 
+                      </p>
+                </div>
+                
+            </div>
+            <div class="col-md-6">
+                <form action="" >
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">First Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" autofocus required aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Last Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Phone Number</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name of Organization</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Service Required </label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Business Development</option>
+                            <option>Advisory</option>
+                            <option>Consulting</option>
+                       </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" required rows="7"></textarea>
+                    </div>
+                    <button type="submit" class="text-uppercase btn-danger p-2">send message</button>
+                </form>
+            </div>
+            <!-- <div class="col-md-2"></div> -->
         </div>
     </div>
 </section>
@@ -114,7 +176,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-5 py-5 ">
                 <form action="" >
-                    <input type="text" class="name-input mr-2" placeholder="Name" required >
+                    <input type="text" class="name-input mr-2" placeholder="Name" required > 
                     <input type="email" class="email-input" placeholder="Email" required> <br>
                     <!-- <input type="text" class="company_name" placeholder="Company Name"><br> -->
                     <textarea name="company_name"  id="message" class="message-input" cols="5" rows="2" placeholder="Company Name" required></textarea> <br>

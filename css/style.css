@@ -188,7 +188,7 @@ ul li
 } */
 
 
-form input[type=email]
+form .email-input
 {
     padding: 10px;
     margin-bottom: 20px;
@@ -199,7 +199,7 @@ form input[type=email]
     color: var(--mainWhite);
     width: 46%;
 }
-form input[type=text]
+form .name-input
 {
     padding: 10px;
     margin-bottom: 20px;
@@ -224,7 +224,7 @@ form input[type=text]
 {
     width: 70%;
 } */
-form textarea
+form .message-input
 {
     width: 95%;
     background: var(--mainBlue);
@@ -332,6 +332,14 @@ form textarea
     line-height: 1.8em; 
     font-size: 1.1rem;
 }
+
+/* schedule-appointment */
+.schedule-appointment label
+{
+    color:#A2AAB2 ;
+}
+
+.schedule-appointment .form-control{border: none;background: #A2AAB2;}
 
 
 
