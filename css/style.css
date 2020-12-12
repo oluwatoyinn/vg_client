@@ -47,29 +47,43 @@ button
     border: none;
 }
 
-
-/* head section */
+/* NAVBAR SECTION NEW */
+/* .email-icon{padding-right: 10px;} */
 .nav-info p
 {
     font-size: 0.75rem;
-    /* color: ; */
 }
 .head{color: var(--mainRed);}
+
+.nav_bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.bg{background: var(--mainWhite) !important;}
 .bg_logo{
     width: 98px;
+    margin-left: 250px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-toggler
+{
+    border: none !important;
 }
 .nav-link
 {
   color:var(--mainBlack) !important;
   font-size: 1.1rem;
   padding-right: 30px !important;
-  /* transition: all 1s ease-in-out; */
 }
 .nav-link:hover{
     color: var(--mainRed) !important;
     border-bottom: solid 2px var(--mainRed);
 }
-/* navbar */
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -103,31 +117,31 @@ button
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;}  */
 
-/* slider */
-/* .max-height
-{
-    background: var(--mainBlue);
-    min-height: 450px;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-} */
+
+
+.slider{padding-top:12px;}
+
+#navbar_head{
+    padding-bottom: 40px;
+}
 
 .max-height
 {
     /* min-height:calc(100vh - 60px) ; */
+
     min-height: 460px;
+    /* min-width: calc(100vh - 68px); */
     background:linear-gradient(var(--blueTrans), var(--blueTrans)), url('/img/growth_draft.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    padding-top: 50px;
     /* position: relative; */
 }
+/* .slider{padding-top: 95px;} */
 .slider-text{
     color: var(--mainWhite);
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -177,6 +191,41 @@ ul li
 }
 
 /* footer */
+/* .footer{flex-direction: column;} */
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+#status.success
+{
+    background-color: rgb(211, 250, 153); 
+    animation: status 4s ease forwards;
+}
+#status.error
+{
+    background-color: rgb(250, 129, 92); 
+    color:var(--mainWhite);  
+    animation: status 4s ease forwards;   
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
 .footer-background
 {
     background: var(--mainBlue);
@@ -341,7 +390,11 @@ form .message-input
 
 .schedule-appointment .form-control{border: none;background: #A2AAB2;}
 
-
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
 
 
 
@@ -359,18 +412,21 @@ form .message-input
 
 /* laptop, phone and tablet */
 @media screen and (max-width: 768px)  {
+
+    .bg_logo{
+        width: 98px;
+        margin-left: 0px;
+    }
+    nav{margin-right: 0px;}
+    .navbar-nav{background: var(--mainWhite);}
     .slider-text h4 {
         font-size: 0.7rem;
     }
     .slider-text h1 {
         font-size: 1.4rem;
     }
-    .slider-text h3 {
-        font-size: 1.4rem;
-    }
-
+    .slider-text h3 {font-size: 1.4rem; }
     .contact{margin-left: 0px;}
-
     form input[type=text]
     form textarea
     {
@@ -412,3 +468,5 @@ form .message-input
     .services-mobile{padding-top: 20px;}
 }
 
+
+/* testing the navbar */
