@@ -21,6 +21,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>VG CONSULTING</title>
 </head>
 <body>
@@ -57,9 +58,9 @@
                      </div>
                     </div> 
                  </li>
-                 <!-- <li class="nav-item mr-3">
+                 <li class="nav-item mr-3">
                     <a class="nav-link" href="#Careers">career</a>
-                </li> -->
+                </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link" href="contactUs.html">contact Us</a>
                 </li>
@@ -74,7 +75,7 @@
         <div class="row business-height justify-content-center align-items-center">
             <div class="container">
                 <div class="col-10 mr-auto slider-text">
-                    <h2 class="text-capitalize mb-3 " >business developement</h2>
+                    <h2 class="text-capitalize mb-3 " >business developement and advisory service</h2>
                     <p class="m-0">
                         Our Business Development servics satisfy the primary 
                         objective such as sales growth, business expansion, the formation 
@@ -96,7 +97,7 @@
     </div>
 </section>
 <section class="business-service">
-    <div class="container ">
+    <div class="container pt-5 ">
         <div class="row pt-5">
             <div class="col-md-4">
                 <div class="img-container">
@@ -110,7 +111,7 @@
                 <h3 class="text-muted mb-4">Services</h3>
                 <!-- <hr> -->
                 <div class="business-div">
-                    <h2>Business Development</h2>
+                    <h2>Business Development and Advisory Service</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                         nobis tempora at. Voluptatem expedita eos provident doloremque 
                         architecto rem ducimus dicta iste dolorum magni officia, 
@@ -149,21 +150,24 @@
 </section>
 
 <!-- footer -->
-<section id="contactus" class="footer mt-5">
+<section class="footer mt-5">
     <div class="container-fluid">
         <div class="row footer-background contact">
             <!-- <div class="container"> -->
             <div class="col-md-2"></div>
             <div class="col-md-5 py-5 ">
-                <form action="" >
-                    <input type="text" class="name-input mr-2" placeholder="Name" required >
-                    <input type="email" class="email-input" placeholder="Email" required> <br>
+                <form id="contact-form" action="" >
+                    <input type="text" class="name-input mr-2" placeholder="Name" id="name" name="name" required >
+                    <input type="email" class="email-input" placeholder="Email" id="email" name="email" required> <br>
                     <!-- <input type="text" class="company_name" placeholder="Company Name"><br> -->
-                    <textarea name="company_name"  id="message" class="message-input" cols="5" rows="2" placeholder="Company Name" required></textarea> <br>
+                    <textarea name="company_name"  id="message" class="message-input"  cols="5" rows="2" placeholder="Company Name" required></textarea> <br>
                     <textarea name="message" id="message" class="mt-3 message-input" cols="10" rows="5" placeholder="Message" required></textarea> <br>
+                   
                     <button type="submit" class="text-uppercase btn-danger p-2">send message</button>
                 </form>
+                 <!-- <div id="status" class="error mt-3">Successfully submitted</div>  -->
             </div>
+          
             <div class="col-md-5 footer-contact address text-capitalize py-5">
                 <h3 class="mb-5">Contact Us</h3>
                 <p class="d-flex flex-wrap">
@@ -181,7 +185,6 @@
             <!-- </div> -->
             </div>
             <div class="col-md-2"></div>
-            
         </div>
     </div>
 </section>  
@@ -192,6 +195,26 @@
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <script>
         new WOW().init();
+    </script>
+    <script src="js/script.js"></script>
+    <script>
+        $("#contact-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbycdMyaGJy6TGLuELBbidOpdaMJiauySaUlqnFY/exec",
+                data:$("#contact-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Error encountered")
+    
+                }
+            })
+        })
     </script>
 </body>
 </html>

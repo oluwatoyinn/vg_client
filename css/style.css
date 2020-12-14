@@ -66,6 +66,7 @@ button
     width: 98px;
     margin-left: 250px;
 }
+.navbar-nav{margin-right: 200px;}
 .navbar-nav li
 {
     padding: 0 10px;
@@ -100,8 +101,9 @@ button
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
+    /* background-color: #f1f1f1; */
+    background-color: var(--mainWhite);
+    min-width: 370px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -121,7 +123,10 @@ button
 
 
 
-.slider{padding-top:12px;}
+.slider{
+    padding-top:12px;
+}
+#slider{padding-bottom: 50px;}
 
 #navbar_head{
     padding-bottom: 40px;
@@ -131,7 +136,7 @@ button
 {
     /* min-height:calc(100vh - 60px) ; */
 
-    min-height: 460px;
+    min-height: 520px;
     /* min-width: calc(100vh - 68px); */
     background:linear-gradient(var(--blueTrans), var(--blueTrans)), url('/img/growth_draft.jpg');
     background-position: center;
@@ -152,7 +157,7 @@ button
 }
 .slider-text h4
 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.8em;
     font-style: normal;
 }
@@ -173,8 +178,10 @@ button
 }
 
 /* vision and mission */
+/* #vision{padding-top: 50px;} */
 .vision_background
 {
+    padding-top: 50px;
     background: #f2f2f2 !important;
     min-height:400px ;
     /* border: 2px solid var(--mainRed);
@@ -309,7 +316,7 @@ form .message-input
 
 .slider-height
 {
-    min-height: 400px;
+    min-height: 520px;
     background:linear-gradient(var(--blueTrans), var(--blueTrans)), url('/img/aboutus.jpg');
     background-position: center;
     background-size: cover;
@@ -336,13 +343,14 @@ form .message-input
 /* business development */
 .business-height
 {
-    min-height: 450px;
+    min-height: 520px;
     background:linear-gradient(var(--blueTrans), var(--blueTrans)), url('/img/business-logo.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+.businbusiness-service{padding-top: 50px;}
 #business h2
 {
     position: relative;
