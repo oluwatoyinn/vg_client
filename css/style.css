@@ -178,7 +178,7 @@ button
 }
 
 /* vision and mission */
-/* #vision{padding-top: 50px;} */
+
 .vision_background
 {
     padding-top: 50px;
@@ -187,12 +187,12 @@ button
     /* border: 2px solid var(--mainRed);
     box-shadow: var(--mainWhite); */
 }
-ul
+.core-values ul
 {
     list-style-type: none;
     padding: 8px;
 }
-ul li
+.core-values ul li
 {
     margin: 20px;
 }
@@ -397,6 +397,13 @@ form .message-input
 }
 
 .schedule-appointment .form-control{border: none;background: #A2AAB2;}
+
+.const {border-radius: 70px; size: 150px;border-image-width: 30px;}
+
+/* .tax-image{
+    width: 260px;
+    height: 170px;
+} */
 
 /* .sticky {
     position: fixed;
