@@ -113,6 +113,8 @@ button
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    margin-left: 30px;
+    /* text-align: center; */
   }
   
   .dropdown-content a:hover {background-color: #ddd;}
@@ -120,8 +122,6 @@ button
   .dropdown:hover .dropdown-content {display: block;}
   
   /* .dropdown:hover .dropbtn {background-color: #3e8e41;}  */
-
-
 
 .slider{
     padding-top:12px;
@@ -426,6 +426,11 @@ form .message-input
 
 
 /* laptop, phone and tablet */
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+    nav {margin-right: 0px;}
+}
+
 @media screen and (max-width: 768px)  {
 
     .bg_logo{
@@ -481,6 +486,12 @@ form .message-input
     }
     /* business development, advisory and consulting */
     .services-mobile{padding-top: 20px;}
+}
+
+@media screen and (max-width: 500px) {
+
+    #whatWeDo h4{font-size: 0.7rem;}
+
 }
 
 
