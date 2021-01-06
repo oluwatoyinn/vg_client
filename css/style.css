@@ -375,6 +375,12 @@ form .message-input
     background: #000066;
     min-height: 80vh;
 }
+.teamHeader{
+    color: var(--mainWhite);
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
 /* .team::before{
     content: '';
     position: absolute;
