@@ -78,8 +78,9 @@ button
 }
 .bg{background: var(--mainWhite) !important;}
 .bg_logo{
-    width: 98px;
+    width: 110px;
     margin-left: 250px;
+    position: relative;
 }
 .navbar-nav{margin-right: 200px;}
 .navbar-nav li
@@ -176,6 +177,28 @@ button
     font-size: 1.3rem;
     line-height: 1.8em;
     font-style: normal;
+}
+
+.social-media
+{
+    min-height: 30px;
+    background: var(--mainWhite);
+}
+.social-media ul
+{
+    list-style: none;
+    justify-content: right;
+    float: right;
+    display: flex;
+}
+.social-media ul li
+{
+    padding-right: 30px;
+    font-size: 25px;
+}
+.twitter{
+    min-height: 700px;
+    background: #E8E8E8;
 }
 
 /* whatWeDo */
