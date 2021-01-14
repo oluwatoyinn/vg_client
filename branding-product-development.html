@@ -35,7 +35,7 @@
                 </span>
                 <p class="m-2"> (234) 803 345 9094 | 
                     <i class="fas fa-envelope"></i>
-                    <span class="email-icon">veginus2016@gmail.com</span>
+                    <span class="email-icon">vg2rconsultingltd@gmail.com</span>
                 </p>
             </div>
         </div>
@@ -167,7 +167,7 @@
                  <!-- <div id="status" class="error mt-3">Successfully submitted</div>  -->
             </div>
           
-            <div class="col-md-5 footer-contact address text-capitalize py-5">
+            <div class="col-md-5 footer-contact address py-5">
                 <h3 class="mb-5">Contact Us</h3>
                 <p class="d-flex flex-wrap">
                     <span class="mr-4 footer-icon"><i class="fas fa-map"></i></span>
@@ -175,7 +175,7 @@
                 </p>
                 <p class="d-flex flex-wrap">
                     <span class="mr-4 footer-icon"><i class="fas fa-envelope"></i></span>
-                    <span>veginus2016@gmail.com</span>
+                    <span>vg2rconsultingltd@gmail.com</span>
                 </p>
                 <p class="d-flex flex-wrap">
                     <span class="mr-4 footer-icon"><i class="fas fa-phone"></i></span>
@@ -215,13 +215,13 @@
         $("#contact-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbycdMyaGJy6TGLuELBbidOpdaMJiauySaUlqnFY/exec",
+                url:"https://script.google.com/macros/s/AKfycbz3yQajhKpLuRiFXzOOMQY1zchpPZILdJb0u8hL/exec",
                 data:$("#contact-form").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("Form submitted successfully")
+                    // alert("message submitted successfully")
                     window.location.reload()
-                    //window.location.href="https://google.com"
+                    window.location.href="https://vgrconsultingltd.com/"
                 },
                 error:function (err){
                     alert("Error encountered")

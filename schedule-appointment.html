@@ -35,7 +35,7 @@
                 </span>
                 <p class="m-2"> (234) 803 345 9094 | 
                     <i class="fas fa-envelope"></i>
-                    <span class="email-icon">veginus2016@gmail.com</span>
+                    <span class="email-icon">vg2rconsultingltd@gmail.com</span>
                 </p>
             </div>
         </div>
@@ -189,7 +189,7 @@
                 </p>
                 <p class="d-flex flex-wrap">
                     <span class="mr-4 footer-icon"><i class="fas fa-envelope"></i></span>
-                    <span>veginus2016@gmail.com</span>
+                    <span>vg2rconsultingltd@gmail.com</span>
                 </p>
                 <p class="d-flex flex-wrap">
                     <span class="mr-4 footer-icon"><i class="fas fa-phone"></i></span>
@@ -230,13 +230,13 @@
         $("#schedule-appointment").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbyVu7QfCMdLDbL3diKLZQ_cRbh2vzF1EfU3tTyZ2w/exec",
+                url:"https://script.google.com/macros/s/AKfycbxrl7DGaWy8N7_tLwYD4Ap-ioBIu6zk1vK4lAAT/exec",
                 data:$("#schedule-appointment").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("Appointment successfully submitted")
+                    // alert("Appointment successfully submitted")
                     window.location.reload()
-                    //window.location.href="https://google.com"
+                    window.location.href="https://vgrconsultingltd.com/"
                 },
                 error:function (err){
                     alert("Error encountered")
@@ -250,13 +250,13 @@
         $("#contact-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbycdMyaGJy6TGLuELBbidOpdaMJiauySaUlqnFY/exec",
+                url:"https://script.google.com/macros/s/AKfycbz3yQajhKpLuRiFXzOOMQY1zchpPZILdJb0u8hL/exec",
                 data:$("#contact-form").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("message submitted successfully")
+                    // alert("message submitted successfully")
                     window.location.reload()
-                    //window.location.href="https://google.com"
+                    window.location.href="https://vgrconsultingltd.com/"
                 },
                 error:function (err){
                     alert("Error encountered")
